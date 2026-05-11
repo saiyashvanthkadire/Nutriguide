@@ -1,0 +1,183 @@
+ body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/images/hero.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+/* Header */
+header {
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 0.7s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+      padding: 8px 12px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      color: #ff007f;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: #ffffff;
+      min-width: 250px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 1;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #a8d437;
+      color: white;
+    }
+
+    nav ul li:hover .dropdown-content {
+      display: block;
+    }
+
+/* Sections */
+.hero, .center-text {
+    padding: 60px 12%;
+}
+
+.script-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    color: #5a9f30;
+}
+
+.highlight {
+    color: #5a9f30;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Grid sections */
+.grid-section {
+    padding: 60px 10%;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 20px 0;
+    color: #e60050;
+}
+
+.card p {
+    padding: 0 20px 10px;
+}
+.center-text{text-align:center;}
+footer {
+      background: #a8d437;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    header .logo {
+  font-weight: bold;
+  font-size: 20px; /* reduced from 24px */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 40px; /* reduced from 50px */
+  width: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 6px 10px; /* slightly reduced */
+  display: block;
+  font-size: 15px; /* smaller text for a compact look */
+}

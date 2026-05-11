@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriKids - Fun & Healthy Eating!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/kids.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#f97316',
+                        'secondary': '#0d9488',
+                        'accent': '#eab308',
+                        'light-bg': '#fffbeb',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <header>
+  <div class="logo">
+    <img src="/static/images/logo.jpg" alt="NutriGuide logo">
+    <div class="logo-text">
+      <h1 style="font-size: 1.2em; margin: 0; color: white;"><i>NutriGuide</i></h1>
+      <p style="font-size: 0.8em; margin: 0; color: #ccc;"><i>Rehab your health</i></p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="/index">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <a href="#">Programs ▾</a>
+        <div class="dropdown-content">
+          <a href="/lifestyle">NutriGuide for Lifestyle Management</a>
+          <a href="/women">NutriGuide for Women</a>
+          <a href="/kids">NutriGuide for Kids</a>
+          <a href="/corporates">NutriGuide for Corporates</a>
+        </div>
+      </li>
+      <li><a href="/how_it_work">How it Works</a></li>
+      <li><a href="/praises1">Praises</a></li>
+      <li><a href="/iplan1">iPlan</a></li>
+      <li><a href="/nutribites">Nutribites</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+    <header class="sticky top-0 z-30 bg-white shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="p-2 bg-primary rounded-full">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5M8.253 12H15.75M12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">Nutri<span class="text-primary">Kids</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium text-secondary">
+                <a href="#why" class="hover:text-primary transition duration-200">Why It's Fun</a>
+                <a href="#recipes" class="hover:text-primary transition duration-200">Yummy Food</a>
+                <a href="#how" class="hover:text-primary transition duration-200">How It Works</a>
+                <a href="#parents" class="hover:text-primary transition duration-200">Parent's Corner</a>
+            </nav>
+            <a href="#how" class="hidden md:block bg-accent text-white px-5 py-2 rounded-xl font-semibold shadow-lg hover:bg-yellow-600 transition duration-300">
+                Let's Go!
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="bg-light-bg py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight text-secondary">
+                    Eat <span class="text-primary">Yummy</span> Food, Get <span class="text-accent">Energy</span> to Play!
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 text-gray-700">
+                    Discover tasty snacks and meals that make you strong, smart, and ready for adventure!
+                </p>
+                <a href="#how" class="inline-block bg-primary text-white text-xl font-bold px-10 py-4 rounded-xl shadow-2xl hover:bg-orange-600 transform hover:scale-105 transition duration-300">
+                    Find Fun Recipes
+                </a>
+            </div>
+        </section>
+        <section id="why" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Why NutriKids is Awesome!</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-light-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Play Power</h3>
+                        <p class="text-gray-600">Get all the energy you need to run, jump, and play your favorite games all day long!</p>
+                    </div>
+                    <div class="bg-light-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-secondary text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 16.333A8.963 8.963 0 0012 17.5c1.231 0 2.39-.304 3.337-.833m-6.674 0a8.963 8.963 0 01-3.337-.833M3 12a9 9 0 0118 0v-1.333c0-.853-.14-1.68-.4-2.467l-2.734-5.467a1 1 0 00-.895-.533H6.03a1 1 0 00-.895.533L2.4 8.2c-.26.787-.4 1.614-.4 2.467V12z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Brain Food</h3>
+                        <p class="text-gray-600">Eat smart snacks that help you think, learn new things at school, and solve tricky puzzles!</p>
+                    </div>
+                    <div class="bg-light-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-accent text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Strong Bones & Muscles</h3>
+                        <p class="text-gray-600">Find foods that build strong bones for growing tall and healthy muscles for climbing high!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how" class="py-16 bg-teal-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">How to Start Your Food Adventure!</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="flex flex-col items-center text-center max-w-xs">
+                        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">1</div>
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Tell Us About You</h3>
+                        <p class="text-gray-600">What are your favorite flavors? Any foods you don't like? We listen!</p>
+                    </div>
+                    <div class="hidden md:block text-4xl text-gray-400">&rarr;</div>
+                    <div class="flex flex-col items-center text-center max-w-xs">
+                        <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">2</div>
+                        <h3 class="text-xl font-semibold mb-2 text-secondary">Get Fun Recipes</h3>
+                        <p class="text-gray-600">We show you and your parents how to make yummy "Rainbow Wraps" and "Superhero Smoothies"!</p>
+                    </div>
+                    <div class="hidden md:block text-4xl text-gray-400">&rarr;</div>
+                    <div class="flex flex-col items-center text-center max-w-xs">
+                        <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">3</div>
+                        <h3 class="text-xl font-semibold mb-2 text-accent">Eat & Play!</h3>
+                        <p class="text-gray-600">Enjoy your delicious, healthy food and feel the power to play and explore!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recipes" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Check Out These Yummy Ideas!</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-light-bg rounded-2xl shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x400/f97316/ffffff?text=Rainbow+Wraps" alt="Rainbow Wraps" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary mb-3">Rainbow Wraps</h3>
+                            <p class="text-gray-600 mb-4">Crunchy, colorful veggies like carrots, peppers, and lettuce all rolled up in a yummy wrap. Perfect for dipping!</p>
+                            <button onclick="showMessage('You found the Rainbow Wrap recipe!')" class="bg-primary text-white px-5 py-2 rounded-xl font-semibold hover:bg-orange-600 transition duration-300">
+                                See How to Make It!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-light-bg rounded-2xl shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x400/0d9488/ffffff?text=Superhero+Smoothies" alt="Superhero Smoothies" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Superhero Smoothies</h3>
+                            <p class="text-gray-600 mb-4">Blend bananas, strawberries, and spinach (it's a secret!) for a super-powered drink that tastes like a treat.</p>
+                            <button onclick="showMessage('You found the Superhero Smoothie recipe!')" class="bg-secondary text-white px-5 py-2 rounded-xl font-semibold hover:bg-teal-700 transition duration-300">
+                                See How to Make It!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="parents" class="py-16 bg-secondary text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6">A Quick Note for Parents</h2>
+                <p class="text-xl text-teal-100 mb-8">
+                    NutriKids is built on positive reinforcement and education, not restriction. All our plans are developed by certified pediatric dietitians to ensure they are safe, balanced, and support healthy growth and a positive relationship with food.
+                </p>
+                <button onclick="showMessage('Thank you for your interest! We are happy to help.')" class="bg-white text-secondary text-lg font-bold px-8 py-3 rounded-xl shadow-xl hover:bg-gray-100 transition duration-300">
+                    Learn About Our Experts
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms of Use</a>
+                <a href="#parents" class="text-gray-400 hover:text-white">For Parents</a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2024 NutriKids. Let's make eating fun!</p>
+        </div>
+    </footer>
+    <a href="#how" class="fixed bottom-0 left-0 right-0 md:hidden bg-primary text-white text-lg font-bold py-4 text-center shadow-2xl z-40 hover:bg-orange-600 transition duration-300">
+        Let's Start the Adventure!
+    </a>
+    <div id="messageBox" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white p-6 rounded-2xl shadow-2xl max-w-sm w-full text-center border-t-8 border-primary">
+            <h5 class="text-2xl font-bold mb-3 text-primary">Hooray!</h5>
+            <p id="messageText" class="text-gray-700 mb-4 text-lg"></p>
+            <button onclick="hideMessage()" class="bg-secondary text-white px-6 py-2 rounded-xl font-semibold hover:bg-teal-700 transition duration-300">
+                Got it!
+            </button>
+        </div>
+    </div>
+    <script>
+        const messageBox = document.getElementById('messageBox');
+        const messageText = document.getElementById('messageText');
+        function showMessage(message) {
+            messageText.textContent = message;
+            messageBox.classList.remove('hidden', 'opacity-0');
+            messageBox.classList.add('flex', 'opacity-100');
+        }
+        function hideMessage() {
+            messageBox.classList.remove('opacity-100');
+            messageBox.classList.add('opacity-0');
+            setTimeout(() => {
+                messageBox.classList.remove('flex');
+                messageBox.classList.add('hidden');
+            }, 300); 
+        }
+    </script>
+</body>
+
+</html>

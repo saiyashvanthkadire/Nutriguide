@@ -1,0 +1,50 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://c8.alamy.com/comp/W50GE1/different-tasty-food-from-delivery-service-on-wooden-background-W50GE1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .signup-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #444;
+      width: 350px;
+      text-align: center;
+    }
+    .signup-box h2 {
+      margin-bottom: 20px;
+    }
+    .signup-box input[type="text"],
+    .signup-box input[type="email"],
+    .signup-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signup-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .signup-box button:hover {
+      background-color: #388e3c;
+    }
+    .flash-error {
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+    }

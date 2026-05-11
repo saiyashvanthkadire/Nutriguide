@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutri Recipes</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='nutribites.css') }}">
+  <style>
+   
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Header/Navbar ===== -->
+   <header>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="NutriGuide logo">
+    <div class="logo-text">
+      <h1 style="font-size: 1.2em; margin: 0; color: white;"><i>NutriGuide</i></h1>
+      <p style="font-size: 0.8em; margin: 0; color: #ccc;"><i>Rehab your health</i></p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="/index">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <a href="#">Programs ▾</a>
+        <div class="dropdown-content">
+          <a href="/lifestyle">NutriGuide for Lifestyle Management</a>
+          <a href="/women">NutriGuide for Women</a>
+          <a href="/kids">NutriGuide for Kids</a>
+          <a href="/corporates">NutriGuide for Corporates</a>
+        </div>
+      </li>
+      <li><a href="/how_it_work">How it Works</a></li>
+      <li><a href="/praises1">Praises</a></li>
+      <li><a href="/iplan1">iPlan</a></li>
+      <li><a href="/nutribites">Nutribites</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h1>🥗 NutriBites – Healthy Recipes</h1>
+    <p>Discover delicious, healthy, and easy-to-make recipes!</p>
+  </section>
+
+  
+
+  <!-- ===== Recipe Gallery ===== -->
+  <section class="gallery">
+    <a href="/salad" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdMHOvXfd09HHW8kuR4DhgWVQSs0KXHKVDw&s" alt="Salad">
+      <h3>Greek Salad</h3>
+    </a>
+
+    <a href="/soup" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZALlY2AgfHfW4PKUEKvY2yg7cVgrN5VGr7A&s" alt="Soup">
+      <h3>Veg Soup</h3>
+    </a>
+
+    <a href="/sandwich" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2025/05/clubsandwich.jpg" alt="Sandwich">
+      <h3>Veg Sandwich</h3>
+    </a>
+
+    <a href="/pasta" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://s.lightorangebean.com/media/20240914160809/Spicy-Penne-Pasta_-done.png" alt="Pasta">
+      <h3>Pasta</h3>
+    </a>
+
+    <a href="/dessert" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://sallysbakingaddiction.com/wp-content/uploads/2015/03/no-bake-greek-yogurt-fruit-tart-3.jpg" alt="Dessert">
+      <h3>Chocolate Dessert</h3>
+    </a>
+
+    <a href="/smoothie" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://images.eatthismuch.com/img/927279_tabitharwheeler_0429baa1-435d-4689-b5f9-382a6040fe09.jpg" alt="Smoothie">
+      <h3>Fruit Smoothie</h3>
+    </a>
+
+    <a href="/biryani" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://www.currychief.com/cdn/shop/articles/Banner_Image.jpg?v=1672411451" alt="Biryani">
+      <h3>Spicy Biryani</h3>
+    </a>
+
+    <a href="/paneer" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://imgk.timesnownews.com/story/paneer-tikka.gif" alt="Paneer">
+      <h3>Paneer Tikka</h3>
+    </a>
+
+    <a href="/fruit" class="card" target="_blank" rel="noopener noreferrer">
+      <img src="https://images.archanaskitchen.com/images/recipes/world-recipes/healthy-breakfast-recipes/breakfast-bowl-recipes/fresh_fruit_bowl_recipe_d16b4666b8.jpg" alt="Fruit Bowl">
+      <h3>Fruit Bowl</h3>
+    </a>
+
+    
+    <a href="/calorie" class="card" target="_blank" rel="noopener noreferrer">
+    <img src="https://a.storyblok.com/f/273742/1666c93e3d/how-to-calorie-count-without-becoming-obsessive.webp/m/640x0/" alt="calories count">
+    <h3>Calories Count</h3>
+  </a>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 NutriBites | Eat Healthy, Stay Happy 🌱</p>
+  </footer>
+
+</body>
+</html>

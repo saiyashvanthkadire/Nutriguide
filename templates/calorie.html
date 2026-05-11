@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrition Calorie Counter</title>
+<link rel="stylesheet" href="/static/calorie.css">
+
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Nutrition Calorie Counter</h2>
+
+    <label>Food Item</label>
+    <input type="text" id="food" placeholder="e.g. Chicken Biryani, Rice, Milk, Apple">
+
+    <label>Quantity (grams)</label>
+    <input type="number" id="grams" placeholder="Enter weight in grams">
+
+    <button onclick="calculateCalories()">Calculate Calories</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+// EXTENDED CALORIE DATABASE (calories per 1 gram)
+const calorieDB = {
+    // Fruits
+    "apple": 0.52, "banana": 0.89, "mango": 0.60, "orange": 0.47,
+    "grapes": 0.69, "pineapple": 0.50, "papaya": 0.43, "watermelon": 0.30,
+    "strawberry": 0.33, "blueberry": 0.57, "pomegranate": 0.83,
+
+    // Vegetables
+    "potato": 0.87, "tomato": 0.18, "onion": 0.40, "carrot": 0.41,
+    "cucumber": 0.16, "spinach": 0.23, "broccoli": 0.34, "beans": 0.31,
+
+    // Grains & Indian foods
+    "rice": 1.30, "brown rice": 1.11, "chapati": 3.10, "bread": 2.65,
+    "idli": 1.60, "dosa": 1.68, "upma": 1.60, "pongal": 1.90,
+    "sambar": 0.65, "rasam": 0.20, "paratha": 3.20,
+
+    // Curries
+    "dal": 1.16, "chole": 1.80, "rajma": 1.35, "paneer": 2.65,
+    "paneer butter masala": 2.80, "kadhi": 0.90,
+
+    // Dairy
+    "milk": 0.42, "curd": 0.98, "butter": 7.17, "cheese": 4.02,
+
+    // Meat & Eggs
+    "egg": 1.55, "boiled egg": 1.55, "omelette": 2.20,
+    "chicken": 2.39, "chicken curry": 1.80, "chicken fry": 2.50,
+    "mutton": 2.50, "mutton curry": 2.20, "fish": 2.06,
+    "fish fry": 2.30,
+
+    // Popular Indian Biryani Items
+    "chicken biryani": 1.90,
+    "mutton biryani": 2.10,
+    "egg biryani": 1.50,
+    "veg biryani": 1.30,
+    "veg pulao": 1.25,
+    "fried rice": 1.63,
+    "schezwan fried rice": 1.80,
+
+    // Snacks
+    "chips": 5.36, "biscuits": 4.50, "burger": 2.95, "pizza": 2.66,
+    "french fries": 3.12, "samosa": 3.08, "vada": 3.20, 
+    "pani puri": 2.87, "bhel puri": 2.30, "pakoda": 3.80,
+
+    // Sweets
+    "chocolate": 5.46, "ice cream": 2.07, "gulab jamun": 3.17,
+    "laddu": 4.80, "kajukatli": 4.50, "rasgulla": 1.86,
+
+    // Nuts
+    "almonds": 5.76, "cashew": 5.53, "walnut": 6.54, "peanuts": 5.67,
+
+    // Drinks
+    "coke": 0.42, "juice": 0.45, "tea": 0.40, "coffee": 0.02,
+    "milkshake": 1.20, "lassi": 0.80
+};
+
+function calculateCalories() {
+    const food = document.getElementById("food").value.toLowerCase();
+    const grams = parseFloat(document.getElementById("grams").value);
+    const resultDiv = document.getElementById("result");
+
+    if (!food || !grams) {
+        resultDiv.innerHTML = "Please enter all details!";
+        return;
+    }
+
+    if (calorieDB[food]) {
+        let calories = calorieDB[food] * grams;
+        resultDiv.innerHTML = `Total Calories: <span style="color:#0077ff">${calories.toFixed(2)} kcal</span>`;
+    } else {
+        resultDiv.innerHTML = "Food not found! Want me to add it?";
+    }
+}
+</script>
+
+</body>
+</html>

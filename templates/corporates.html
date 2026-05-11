@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriGuide - Personalised Nutrition & Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/style2.css">
+    <style>
+       
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#22c55e',
+                        'secondary': '#3b82f6',
+                        'accent': '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-gray-800 antialiased">
+
+    <header class="sticky top-0 z-30 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="p-2 bg-primary rounded-full">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-17.016z"></path></svg>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">Nutri<span class="text-primary">Guide</span></span>
+            </a>
+
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#features" class="hover:text-primary transition duration-200">Features</a>
+                <a href="#plans" class="hover:text-primary transition duration-200">Plans</a>
+                <a href="#testimonials" class="hover:text-primary transition duration-200">Testimonials</a>
+                <a href="#experts" class="hover:text-primary transition duration-200">Experts</a>
+            </nav>
+
+            <a href="#plans" class="hidden md:block bg-accent text-white px-5 py-2 rounded-xl font-semibold shadow-lg hover:bg-orange-500 transition duration-300">
+                Start Your Free Trial
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-primary text-white py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Personalised Nutrition, Effortless Wellness
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 opacity-90">
+                    Unlock your potential with data-driven meal plans and expert guidance tailored uniquely to your body and goals.
+                </p>
+                <a href="#plans" class="inline-block bg-accent text-white text-xl font-bold px-10 py-4 rounded-xl shadow-2xl hover:bg-orange-600 transform hover:scale-105 transition duration-300">
+                    Get Your Custom Plan Today
+                </a>
+            </div>
+        </section>
+
+        <section id="features" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">The NutriGuide Difference</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-900">100% Personalised Plans</h3>
+                        </div>
+                        <p class="text-gray-600">Beyond generic advice, we use an advanced algorithm to match meals and portions to your metabolism, allergies, and specific fitness goals.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-secondary">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-1a4 4 0 00-4-4H7a4 4 0 00-4 4v1h5m8-10h2a2 2 0 012 2v8m-4-8v8"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-900">Access to Certified Experts</h3>
+                        </div>
+                        <p class="text-gray-600">Chat directly with licensed dietitians and nutritionists for motivation, troubleshooting, and advanced clinical advice anytime you need it.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2v2m0-4c-1.657 0-3 .895-3 2s1.343 2 3 2v2m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-900">500+ Delicious Recipes</h3>
+                        </div>
+                        <p class="text-gray-600">Never eat a bland meal again. Our library features easy-to-follow, budget-friendly recipes that fit every dietary preference and cooking skill level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">What Our Users Are Saying</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div class="bg-gray-50 p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
+                        <p class="text-lg italic text-gray-700 mb-6">
+                            "NutriGuide is a game-changer. I lost 15 lbs in two months, but more importantly, I finally understand how to eat right. The expert chat feature is invaluable."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=J" alt="User Avatar" class="w-12 h-12 rounded-full mr-4 border-2 border-secondary">
+                            <div>
+                                <p class="font-semibold text-gray-900">Jessica A.</p>
+                                <p class="text-sm text-secondary">Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
+                        <p class="text-lg italic text-gray-700 mb-6">
+                            "As a busy parent, meal prep felt impossible. NutriGuide gives me simple, customized grocery lists and recipes that the whole family loves. Highly recommend!"
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/60x60/22c55e/ffffff?text=M" alt="User Avatar" class="w-12 h-12 rounded-full mr-4 border-2 border-primary">
+                            <div>
+                                <p class="font-semibold text-gray-900">Michael R.</p>
+                                <p class="text-sm text-primary">Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plans" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-900">Simple, Flexible Pricing</h2>
+                <p class="text-xl text-center text-gray-600 mb-12">Choose the plan that fits your journey.</p>
+                <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex-1 max-w-lg lg:max-w-none transform transition-all duration-300 hover:scale-[1.02]">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-900">Core Access</h3>
+                        <p class="text-gray-500 mb-4">Perfect for self-starters and beginners.</p>
+                        <div class="text-4xl font-extrabold text-primary mb-6">
+                            $14<span class="text-xl font-medium text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Customized Meal Plans</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Full Recipe Database Access</li>
+                            <li class="flex items-center text-gray-400"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> No Expert Chat Access</li>
+                            <li class="flex items-center text-gray-400"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Basic Tracking Tools</li>
+                        </ul>
+                        <button onclick="showMessage('You selected the Core Access plan!')" class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-green-600 transition duration-300 shadow-md">
+                            Select Core
+                        </button>
+                    </div>
+                    <div class="bg-secondary p-8 rounded-2xl shadow-2xl flex-1 max-w-lg lg:max-w-none transform transition-all duration-300 scale-105 hover:scale-110 relative">
+                        <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1 rounded-bl-xl rounded-tr-xl">BEST VALUE</div>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Pro Guided</h3>
+                        <p class="text-blue-200 mb-4">Unmatched support and premium features.</p>
+                        <div class="text-4xl font-extrabold text-white mb-6">
+                            $29<span class="text-xl font-medium text-blue-200">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-white">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Everything in Core Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <span class="font-bold">24/7 Expert Chat Access</span></li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced Macro Tracking</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Priority Support</li>
+                        </ul>
+                        <button onclick="showMessage('You selected the Pro Guided plan!')" class="w-full bg-accent text-white py-3 rounded-xl font-bold hover:bg-orange-600 transition duration-300 shadow-lg border border-white">
+                            Select Pro
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experts" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Meet Our Certified Experts</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    <div class="flex flex-col items-center text-center p-4">
+                        <img src="/static/images/image3.jpg" alt="Expert 1" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-primary">
+                        <p class="font-bold text-lg text-gray-900">Dr. Helena Cruz, RD</p>
+                        <p class="text-sm text-primary">Clinical Dietitian</p>
+                        <p class="text-xs text-gray-600 mt-2">Specialises in metabolic health and diabetes management.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center p-4">
+                        <img src="/static/images/image2.jpg" alt="Expert 2" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-secondary">
+                        <p class="font-bold text-lg text-gray-900">Samir Patel, MS</p>
+                        <p class="text-sm text-secondary">Sports Nutritionist</p>
+                        <p class="text-xs text-gray-600 mt-2">Focuses on athletic performance and muscle gain diets.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4">
+                        <img src="/static/images/image1.jpg" alt="Expert 3" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-accent">
+                        <p class="font-bold text-lg text-gray-900">Lucas Chen, ND</p>
+                        <p class="text-sm text-accent">Naturopathic Doctor</p>
+                        <p class="text-xs text-gray-600 mt-2">Expert in holistic wellness and gut health protocols.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4">
+                        <img src="/static/images/image4.jpg" alt="Expert 4" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-gray-400">
+                        <p class="font-bold text-lg text-gray-900">Dr. Salvi Son</p>
+                        <p class="text-sm text-gray-600">Recipe Developer</p>
+                        <p class="text-xs text-gray-600 mt-2">Creator of our delicious, quick, and easy family meal plans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold text-primary mb-4">NutriGuide</h4>
+                    <p class="text-sm text-gray-400">Your partner in personalised, sustainable health and wellness.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Platform</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#features" class="hover:text-primary transition">Features</a></li>
+                        <li><a href="#plans" class="hover:text-primary transition">Pricing</a></li>
+                        <li><a href="#experts" class="hover:text-primary transition">Our Team</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Stay Updated</h4>
+                    <form onsubmit="event.preventDefault(); showMessage('Thank you for subscribing!')" class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Enter your email" required class="p-3 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-white">
+                        <button type="submit" class="bg-primary text-white py-3 rounded-xl font-bold hover:bg-green-600 transition duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-gray-800 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 NutriGuide. All rights reserved. Built with health in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="messageBox" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white p-6 rounded-xl shadow-2xl max-w-sm w-full text-center">
+            <h5 class="text-xl font-bold mb-3 text-primary">Notification</h5>
+            <p id="messageText" class="text-gray-700 mb-4"></p>
+            <button onclick="hideMessage()" class="bg-secondary text-white px-5 py-2 rounded-xl font-semibold hover:bg-blue-600 transition duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const messageBox = document.getElementById('messageBox');
+        const messageText = document.getElementById('messageText');
+
+        function showMessage(message) {
+            messageText.textContent = message;
+            messageBox.classList.remove('hidden', 'opacity-0');
+            messageBox.classList.add('flex', 'opacity-100');
+        }
+
+        function hideMessage() {
+            messageBox.classList.remove('opacity-100');
+            messageBox.classList.add('opacity-0');
+            setTimeout(() => {
+                messageBox.classList.remove('flex');
+                messageBox.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+
+</html>

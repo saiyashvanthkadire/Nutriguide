@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriGuide</title>
+  <link rel="stylesheet" href="/static/contact.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  
+   <header>
+  <div class="logo">
+    <img src="/static/images/logo.jpg" alt="NutriGuide logo">
+    <div class="logo-text">
+      <h1 style="font-size: 1.2em; margin: 0; color: white;"><i>NutriGuide</i></h1>
+      <p style="font-size: 0.8em; margin: 0; color: #ccc;"><i>Rehab your health</i></p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="/index">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <a href="#">Programs ▾</a>
+        <div class="dropdown-content">
+          <a href="/lifestyle">NutriGuide for Lifestyle Management</a>
+          <a href="/women">NutriGuide for Women</a>
+          <a href="/kids">NutriGuide for Kids</a>
+          <a href="/corporates">NutriGuide for Corporates</a>
+        </div>
+      </li>
+      <li><a href="/how_it_work">How it Works</a></li>
+      <li><a href="/praises1">Praises</a></li>
+      <li><a href="/iplan1">iPlan</a></li>
+      <li><a href="/nutribites">Nutribites</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="form-section">
+      <h2>Enquire about NutriGuide</h2>
+      <form action="/submit_enquiry" method="post">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <select name="service" required>
+          <option value="">Interested Service</option>
+          <option value="Weight Loss">Weight Loss</option>
+          <option value="Diabetes Management">Diabetes Management</option>
+          <option value="General Wellness">General Wellness</option>
+        </select>
+        <textarea name="requirement" placeholder="Any Specific Requirement"></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p><strong>Mobile:</strong> +91 9347949898 / +91 98730 32558</p>
+      <p><strong>Email:</strong>kadiresaiyashwanth@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 NutriGuide | All Rights Reserved
+  </footer>
+
+</body>
+</html>

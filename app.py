@@ -17,7 +17,7 @@ app.config['SECRET_KEY'] = 'a-very-secret-key-change-this'
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Kadire_sai',
+    'password': 'your_password',
     'database': 'Nutriguide_db'
 }
 
